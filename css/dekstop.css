@@ -1,0 +1,35 @@
+.wrap {
+    margin: 0 auto;
+    width: 1200px;
+    background: lightgray;
+}
+.box1 {
+    line-height: 80px;
+}
+.box1 .content {
+    color: gray;
+    font-weight: 500;
+    
+    display: inline-block;
+    height: auto;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+/* 由大到小的 RWD */
+.box1 {
+    height: 80px;
+    background: lightblue;
+}
+
+ul>li {
+    height: 100px;
+    background: blue;
+    float: left;
+    margin: 1% 1%;
+    width: 23%;
+}
+
+ul::after {
+    clear: both;
+}

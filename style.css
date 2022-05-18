@@ -1,0 +1,99 @@
+.wrap {
+    margin: 0 auto;
+    width: 1200px;
+    background: lightgray;
+}
+.box1 {
+    line-height: 80px;
+}
+.box1 .content {
+    color: gray;
+    font-weight: 500;
+    
+    display: inline-block;
+    height: auto;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+
+/* 由小到大的 RWD */
+
+.box1 {
+    height: 80px;
+    background: lightgreen;
+    text-align: center;
+}
+
+@media(min-width: 540px) {
+    .box1 {
+        background: lightyellow;
+    }
+}
+
+@media(min-width: 768px) {
+    .box1 {
+        background: orange;
+    }
+}
+
+@media(min-width: 920px) {
+    .box1 {
+        background: lightpink;
+    }
+}
+
+/* 由大到小的 RWD */
+/* .box1 {
+    height: 80px;
+    background: lightpink;
+}
+
+@media(max-width: 920px) {
+    .box1 {
+        background: orange;
+    }
+}
+
+@media(max-width: 768px) {
+    .box1 {
+        background: lightyellow;
+    }
+}
+
+@media(max-width: 540px) {
+    .box1 {
+        background: lightgreen;
+    }
+} */
+
+ul>li {
+    height: 100px;
+    background: lightblue;
+    float: left;
+    margin: 1% 1%;
+    width: 98%;
+}
+
+ul::after {
+    clear: both;
+}
+
+
+@media(min-width: 540px) {
+    ul li {
+        width: 48%;
+    }
+}
+
+@media(min-width: 768px) {
+    ul li {
+        width: 31%;
+    }
+}
+
+@media(min-width: 920px) {
+    ul li {
+        width: 23%;
+    }
+}
