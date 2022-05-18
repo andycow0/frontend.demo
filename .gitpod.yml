@@ -1,0 +1,8 @@
+tasks:
+  - name: Start web server
+    before: echo 'before start web server'
+    init: python -m http.server 8000
+
+ports:
+  - port: 8000
+    onOpen: open-preview
